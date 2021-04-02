@@ -1,13 +1,15 @@
 public class User {
 
     public static void main(String[] args) {
-        Controller controller = new Controller(new HeaterOnCommand());
-        controller.execute();
+        Controller controller = new Controller();
 
-        controller = new Controller(new HeaterOffCommand());
-        controller.execute();
+        controller.setCommand(new HeaterOnCommand());
+        controller.pressButton();
 
-        controller = new Controller(new PlayMusicCommand());
-        controller.execute();
+        controller.setCommand(new HeaterOffCommand());
+        controller.pressButton();
+
+        controller.setCommand(new PlayMusicCommand());
+        controller.pressButton();
     }
 }

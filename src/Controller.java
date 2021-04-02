@@ -2,11 +2,10 @@ public class Controller {
 
     private Command command;
 
-    public Controller(Command command) {
-        this.command = command;
-    }
+    public Controller() { }
 
-    public void execute() {
+    public void setCommand(Command command) { this.command = command; }
+    public void pressButton() {
         command.execute();
     }
 }
