@@ -3,4 +3,9 @@ public class PlayMusicCommand implements Command {
     public void execute() {
         Speaker.getInstance().playMusic();
     }
+
+    @Override
+    public void undo() {
+        Speaker.getInstance().stopMusic();
+    }
 }

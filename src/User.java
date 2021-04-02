@@ -11,5 +11,9 @@ public class User {
 
         controller.setCommand(new PlayMusicCommand());
         controller.pressButton();
+
+        controller.undo();
+        controller.undo();
+        controller.undo();
     }
 }

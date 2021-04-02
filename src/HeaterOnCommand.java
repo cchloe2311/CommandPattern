@@ -3,4 +3,9 @@ public class HeaterOnCommand implements Command {
     public void execute() {
         Heater.getInstance().turnHeaterOn();
     }
+
+    @Override
+    public void undo() {
+        Heater.getInstance().turnHeaterOff();
+    }
 }

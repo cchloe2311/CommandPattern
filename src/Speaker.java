@@ -13,4 +13,5 @@ public class Speaker {
     public void playMusic() {
         System.out.println("♫♪♬♫♪♬♫♪♬");
     }
+    public void stopMusic() { System.out.println("stop music"); }
 }
