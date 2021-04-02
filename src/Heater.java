@@ -9,4 +9,12 @@ public class Heater {
         }
         return instance;
     }
+
+    public void turnHeaterOn() {
+        System.out.println("turn on the heater");
+    }
+
+    public void turnHeaterOff() {
+        System.out.println("turn off the heater");
+    }
 }

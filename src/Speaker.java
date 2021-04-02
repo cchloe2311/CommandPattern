@@ -9,4 +9,8 @@ public class Speaker {
         }
         return instance;
     }
+
+    public void playMusic() {
+        System.out.println("♫♪♬♫♪♬♫♪♬");
+    }
 }
